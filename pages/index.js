@@ -1,5 +1,15 @@
-const Home = () => {
-  return <div>Home page</div>;
+import Link from "next/link"
+
+const Home = () =>
+{
+  return (
+    <>
+      <h1>Home page</h1>
+      <Link href="/blog">
+        blog page
+      </Link>
+    </>
+  )
 };
 
 export default Home;
