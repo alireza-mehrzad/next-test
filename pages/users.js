@@ -2,7 +2,14 @@ const userList = ({ users }) => {
   return (
     <>
       <h1>userList</h1>;
-      
+      {users.map((user) => {
+        return (
+          <div key={user.id}>
+            <p>{user.name}</p>
+            <p>{user.email}</p>
+          </div>
+        );
+      })}
     </>
   );
 };
